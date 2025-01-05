@@ -1,0 +1,14 @@
+{
+  "name": "soccer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "tiziano finizzi",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "1.0.0-rc.10",
+    "extends": "^0.0.4",
+    "mongodb": "3.7.0",
+    "nodemailer": "^6.7.7",
+    "puppeteer": "15.3.2"
+  }
+}

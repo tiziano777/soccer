@@ -1,0 +1,1837 @@
+[
+    {
+        "id": 0,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "passaggi_totali",
+            "passaggi_completati",
+            "attacchi",
+            "attacchi_pericolosi",
+            "clearance_completate",
+            "cartellini_rossi",
+            "tiri_fermati",
+            "cross_completati"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "tiri_fermati",
+            "cross_completati"
+        ],
+        "num_stats": [
+            17,
+            18,
+            19
+        ],
+        "err_usage": {
+            "tiri_fermati": "5.71",
+            "cross_completati": "5.71",
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 1,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "passaggi_totali",
+            "passaggi_completati",
+            "contrasti",
+            "attacchi",
+            "attacchi_pericolosi",
+            "cross_completati",
+            "distanza_percorsa (km)",
+            "cartellini_rossi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "distanza_percorsa (km)",
+            "cartellini_gialli",
+            "contrasti",
+            "cross_completati"
+        ],
+        "num_stats": [
+            19,
+            20,
+            18,
+            17,
+            16
+        ],
+        "err_usage": {
+            "distanza_percorsa (km)": "71.01",
+            "contrasti": "91.30",
+            "cross_completati": "91.30",
+            "no_stat_match": "0.72"
+        }
+    },
+    {
+        "id": 2,
+        "use_stats": [
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "angoli",
+            "parate",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi",
+            "punizioni",
+            "fuorigioco",
+            "rimesse_laterali",
+            "falli",
+            "cartellini_rossi"
+        ],
+        "err_stats": [
+            "punizioni",
+            "fuorigioco",
+            "rimesse_laterali",
+            "falli",
+            "tiri_fermati",
+            "cartellini_rossi",
+            "attacchi",
+            "attacchi_pericolosi"
+        ],
+        "num_stats": [
+            10,
+            14,
+            13,
+            9,
+            11,
+            15,
+            12
+        ],
+        "err_usage": {
+            "punizioni": "95.38",
+            "fuorigioco": "96.15",
+            "rimesse_laterali": "93.08",
+            "falli": "95.38",
+            "tiri_fermati": "98.46",
+            "attacchi": "99.23",
+            "attacchi_pericolosi": "99.23",
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 3,
+        "use_stats": [
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "angoli",
+            "parate",
+            "cartellini_rossi",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi",
+            "punizioni",
+            "fuorigioco",
+            "rimesse_laterali",
+            "falli"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "punizioni",
+            "fuorigioco",
+            "rimesse_laterali",
+            "falli",
+            "cartellini_gialli"
+        ],
+        "num_stats": [
+            10,
+            9,
+            13,
+            8
+        ],
+        "err_usage": {
+            "punizioni": "0.88",
+            "fuorigioco": "0.88",
+            "rimesse_laterali": "0.88",
+            "falli": "0.88",
+            "no_stat_match": "0.88"
+        }
+    },
+    {
+        "id": 4,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_rossi",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "cartellini_gialli"
+        ],
+        "num_stats": [
+            16,
+            15,
+            14
+        ],
+        "err_usage": {
+            "no_stat_match": "0.51"
+        }
+    },
+    {
+        "id": 5,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi",
+            "cartellini_rossi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "cartellini_gialli"
+        ],
+        "num_stats": [
+            15,
+            16,
+            14
+        ],
+        "err_usage": {
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 6,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "passaggi_totali",
+            "passaggi_completati",
+            "contrasti",
+            "attacchi",
+            "attacchi_pericolosi",
+            "clearance_completate",
+            "cross_completati",
+            "intercetti",
+            "cartellini_rossi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "cartellini_gialli"
+        ],
+        "num_stats": [
+            21,
+            22,
+            20
+        ],
+        "err_usage": {
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 7,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "angoli",
+            "fuorigioco",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "passaggi_totali",
+            "passaggi_completati",
+            "contrasti",
+            "attacchi",
+            "attacchi_pericolosi",
+            "clearance_completate",
+            "cross_completati",
+            "intercetti",
+            "cartellini_rossi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "cartellini_gialli"
+        ],
+        "num_stats": [
+            19,
+            20,
+            18
+        ],
+        "err_usage": {
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 8,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_rossi",
+            "cartellini_gialli",
+            "passaggi_totali",
+            "attacchi",
+            "attacchi_pericolosi",
+            "intercetti"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "passaggi_totali",
+            "intercetti"
+        ],
+        "num_stats": [
+            17,
+            16,
+            15
+        ],
+        "err_usage": {
+            "passaggi_totali": "99.17",
+            "intercetti": "99.17",
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 9,
+        "use_stats": [
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "angoli",
+            "fuorigioco",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "passaggi_totali",
+            "attacchi",
+            "attacchi_pericolosi",
+            "intercetti",
+            "cartellini_rossi",
+            "punizioni",
+            "rimesse_laterali"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "punizioni",
+            "rimesse_laterali",
+            "cartellini_gialli",
+            "passaggi_totali",
+            "intercetti"
+        ],
+        "num_stats": [
+            13,
+            14,
+            15,
+            16,
+            12,
+            11
+        ],
+        "err_usage": {
+            "punizioni": "3.26",
+            "rimesse_laterali": "3.26",
+            "passaggi_totali": "98.91",
+            "intercetti": "98.91",
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 10,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "passaggi_totali",
+            "passaggi_completati",
+            "contrasti",
+            "attacchi",
+            "attacchi_pericolosi",
+            "clearance_completate",
+            "cartellini_rossi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "cartellini_gialli",
+            "passaggi_totali",
+            "passaggi_completati",
+            "contrasti",
+            "clearance_completate"
+        ],
+        "num_stats": [
+            19,
+            20,
+            18,
+            15
+        ],
+        "err_usage": {
+            "passaggi_totali": "98.85",
+            "passaggi_completati": "98.85",
+            "contrasti": "98.85",
+            "clearance_completate": "98.85",
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 11,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "angoli",
+            "parate",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi",
+            "cartellini_rossi",
+            "falli"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "cartellini_gialli",
+            "falli"
+        ],
+        "num_stats": [
+            10,
+            11,
+            9,
+            12
+        ],
+        "err_usage": {
+            "falli": "0.55",
+            "no_stat_match": "0.55"
+        }
+    },
+    {
+        "id": 12,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "passaggi_totali",
+            "passaggi_completati",
+            "attacchi",
+            "attacchi_pericolosi",
+            "distanza_percorsa (km)",
+            "cartellini_rossi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "cartellini_gialli"
+        ],
+        "num_stats": [
+            17,
+            18,
+            16
+        ],
+        "err_usage": {
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 13,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "passaggi_totali",
+            "passaggi_completati",
+            "attacchi",
+            "attacchi_pericolosi",
+            "distanza_percorsa (km)",
+            "cartellini_rossi",
+            "tiri_fermati",
+            "contrasti",
+            "clearance_completate",
+            "cross_completati",
+            "intercetti"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "cartellini_gialli",
+            "tiri_fermati",
+            "contrasti",
+            "clearance_completate",
+            "cross_completati",
+            "intercetti",
+            "distanza_percorsa (km)"
+        ],
+        "num_stats": [
+            17,
+            18,
+            16,
+            22,
+            21
+        ],
+        "err_usage": {
+            "tiri_fermati": "1.30",
+            "contrasti": "1.30",
+            "clearance_completate": "1.30",
+            "cross_completati": "1.30",
+            "intercetti": "1.30",
+            "distanza_percorsa (km)": "98.70",
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 14,
+        "use_stats": [
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi",
+            "cartellini_rossi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "rimesse_laterali",
+            "falli",
+            "cartellini_gialli"
+        ],
+        "num_stats": [
+            14,
+            15,
+            11,
+            13
+        ],
+        "err_usage": {
+            "rimesse_laterali": "97.92",
+            "falli": "97.92",
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 15,
+        "use_stats": [
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "punizioni",
+            "angoli",
+            "parate",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi",
+            "cartellini_rossi",
+            "tiri_fermati"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "tiri_fuori",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fermati",
+            "attacchi",
+            "attacchi_pericolosi"
+        ],
+        "num_stats": [
+            10,
+            11,
+            9,
+            7,
+            12,
+            8
+        ],
+        "err_usage": {
+            "tiri_fuori": "93.65",
+            "tiri": "95.24",
+            "tiri_in_porta": "95.24",
+            "tiri_fermati": "0.79",
+            "attacchi": "95.24",
+            "attacchi_pericolosi": "95.24",
+            "no_stat_match": "3.97"
+        }
+    },
+    {
+        "id": 16,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi",
+            "cartellini_rossi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "cartellini_gialli"
+        ],
+        "num_stats": [
+            15,
+            16,
+            14
+        ],
+        "err_usage": {
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 17,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi",
+            "cartellini_rossi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "cartellini_gialli"
+        ],
+        "num_stats": [
+            14,
+            15,
+            13
+        ],
+        "err_usage": {
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 18,
+        "use_stats": [
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "angoli",
+            "parate",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi",
+            "cartellini_rossi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "cartellini_gialli"
+        ],
+        "num_stats": [
+            9,
+            10,
+            8
+        ],
+        "err_usage": {
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 19,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_rossi",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "cartellini_gialli"
+        ],
+        "num_stats": [
+            16,
+            15,
+            14
+        ],
+        "err_usage": {
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 20,
+        "use_stats": [
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi",
+            "cartellini_rossi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "tiri_fermati",
+            "punizioni",
+            "fuorigioco",
+            "rimesse_laterali",
+            "cartellini_gialli",
+            "falli"
+        ],
+        "num_stats": [
+            14,
+            15,
+            10,
+            13,
+            9
+        ],
+        "err_usage": {
+            "tiri_fermati": "98.25",
+            "punizioni": "98.25",
+            "fuorigioco": "98.25",
+            "rimesse_laterali": "98.25",
+            "falli": "99.42",
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 21,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi",
+            "cartellini_rossi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "cartellini_gialli"
+        ],
+        "num_stats": [
+            15,
+            16,
+            14
+        ],
+        "err_usage": {
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 22,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_rossi",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "xg",
+            "cartellini_gialli"
+        ],
+        "num_stats": [
+            16,
+            15,
+            14,
+            13
+        ],
+        "err_usage": {
+            "xg": "93.59",
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 23,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "angoli",
+            "fuorigioco",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi",
+            "cartellini_rossi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "cartellini_gialli"
+        ],
+        "num_stats": [
+            13,
+            14,
+            12
+        ],
+        "err_usage": {
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 24,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_rossi",
+            "cartellini_gialli",
+            "passaggi_totali",
+            "passaggi_completati",
+            "attacchi",
+            "attacchi_pericolosi",
+            "clearance_completate"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "clearance_completate"
+        ],
+        "num_stats": [
+            19,
+            17,
+            18
+        ],
+        "err_usage": {
+            "clearance_completate": "13.46",
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 25,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi",
+            "cartellini_rossi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "fuorigioco"
+        ],
+        "num_stats": [
+            15,
+            16,
+            14
+        ],
+        "err_usage": {
+            "fuorigioco": "98.84",
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 26,
+        "use_stats": [
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "angoli",
+            "parate",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi",
+            "cartellini_rossi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "cartellini_gialli"
+        ],
+        "num_stats": [
+            9,
+            10,
+            8
+        ],
+        "err_usage": {
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 27,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_rossi",
+            "cartellini_gialli",
+            "passaggi_totali",
+            "passaggi_completati",
+            "attacchi",
+            "attacchi_pericolosi",
+            "cross_completati",
+            "distanza_percorsa (km)"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi"
+        ],
+        "num_stats": [
+            20,
+            19,
+            18,
+            17
+        ],
+        "err_usage": {
+            "attacchi": "99.48",
+            "attacchi_pericolosi": "99.48",
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 28,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_rossi",
+            "cartellini_gialli",
+            "passaggi_totali",
+            "passaggi_completati",
+            "contrasti",
+            "attacchi",
+            "attacchi_pericolosi",
+            "clearance_completate",
+            "cross_completati"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "cartellini_gialli"
+        ],
+        "num_stats": [
+            21,
+            20,
+            19
+        ],
+        "err_usage": {
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 29,
+        "use_stats": [
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi",
+            "cartellini_rossi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "tiri_fermati",
+            "fuorigioco",
+            "attacchi",
+            "attacchi_pericolosi",
+            "punizioni",
+            "rimesse_laterali",
+            "falli"
+        ],
+        "num_stats": [
+            14,
+            15,
+            13,
+            11,
+            10
+        ],
+        "err_usage": {
+            "tiri_fermati": "83.93",
+            "fuorigioco": "88.39",
+            "attacchi": "91.07",
+            "attacchi_pericolosi": "91.07",
+            "punizioni": "90.18",
+            "rimesse_laterali": "90.18",
+            "falli": "89.29",
+            "no_stat_match": "8.04"
+        }
+    },
+    {
+        "id": 30,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "angoli",
+            "fuorigioco",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "passaggi_totali",
+            "contrasti",
+            "attacchi",
+            "attacchi_pericolosi",
+            "cross_completati",
+            "intercetti",
+            "cartellini_rossi",
+            "punizioni",
+            "rimesse_laterali"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "tiri_fermati",
+            "xg",
+            "fuorigioco",
+            "falli",
+            "passaggi_totali",
+            "contrasti",
+            "cross_completati",
+            "intercetti",
+            "punizioni",
+            "rimesse_laterali"
+        ],
+        "num_stats": [
+            17,
+            18,
+            16,
+            9,
+            10,
+            13,
+            14,
+            15
+        ],
+        "err_usage": {
+            "tiri_fermati": "92.31",
+            "xg": "92.31",
+            "fuorigioco": "95.73",
+            "falli": "95.73",
+            "passaggi_totali": "93.16",
+            "contrasti": "93.16",
+            "cross_completati": "55.56",
+            "intercetti": "93.16",
+            "punizioni": "2.56",
+            "rimesse_laterali": "2.56",
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 31,
+        "use_stats": [
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "punizioni",
+            "angoli",
+            "parate",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi",
+            "cartellini_rossi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "cartellini_gialli"
+        ],
+        "num_stats": [
+            10,
+            11,
+            9
+        ],
+        "err_usage": {
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 32,
+        "use_stats": [
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi",
+            "cartellini_rossi"
+        ],
+        "err_stats": [
+            "cartellini_rossi"
+        ],
+        "num_stats": [
+            14,
+            15
+        ],
+        "err_usage": {
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 33,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "passaggi_totali",
+            "contrasti",
+            "attacchi",
+            "attacchi_pericolosi",
+            "clearance_completate",
+            "cartellini_rossi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "cartellini_gialli"
+        ],
+        "num_stats": [
+            17,
+            18,
+            16
+        ],
+        "err_usage": {
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 34,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi",
+            "cartellini_rossi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "cartellini_gialli",
+            "punizioni"
+        ],
+        "num_stats": [
+            15,
+            16,
+            14,
+            13
+        ],
+        "err_usage": {
+            "punizioni": "57.03",
+            "no_stat_match": "0.39"
+        }
+    },
+    {
+        "id": 35,
+        "use_stats": [
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "angoli",
+            "parate",
+            "cartellini_rossi",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "cartellini_gialli"
+        ],
+        "num_stats": [
+            10,
+            9,
+            8
+        ],
+        "err_usage": {
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 36,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "passaggi_totali",
+            "passaggi_completati",
+            "attacchi",
+            "attacchi_pericolosi",
+            "cartellini_rossi",
+            "tiri_fermati"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "tiri_fermati",
+            "cartellini_gialli"
+        ],
+        "num_stats": [
+            16,
+            17,
+            18,
+            15
+        ],
+        "err_usage": {
+            "tiri_fermati": "1.85",
+            "no_stat_match": "0.93"
+        }
+    },
+    {
+        "id": 37,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "passaggi_totali",
+            "passaggi_completati",
+            "contrasti",
+            "attacchi",
+            "attacchi_pericolosi",
+            "clearance_completate",
+            "cross_completati",
+            "intercetti",
+            "cartellini_rossi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "punizioni",
+            "rimesse_laterali",
+            "xg"
+        ],
+        "num_stats": [
+            21,
+            22,
+            19,
+            20
+        ],
+        "err_usage": {
+            "punizioni": "68.48",
+            "rimesse_laterali": "68.48",
+            "xg": "98.91",
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 38,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi",
+            "cartellini_rossi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "xg"
+        ],
+        "num_stats": [
+            15,
+            16,
+            14
+        ],
+        "err_usage": {
+            "xg": "98.52",
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 39,
+        "use_stats": [
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_rossi",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi",
+            "clearance_completate",
+            "passaggi_totali",
+            "passaggi_completati"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "passaggi_totali",
+            "passaggi_completati",
+            "rimesse_laterali",
+            "punizioni",
+            "attacchi",
+            "attacchi_pericolosi"
+        ],
+        "num_stats": [
+            15,
+            14,
+            16,
+            17,
+            13,
+            12,
+            11
+        ],
+        "err_usage": {
+            "passaggi_totali": "31.03",
+            "passaggi_completati": "31.03",
+            "rimesse_laterali": "91.38",
+            "punizioni": "92.24",
+            "attacchi": "99.14",
+            "attacchi_pericolosi": "99.14",
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 40,
+        "use_stats": [
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "angoli",
+            "parate",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi",
+            "cartellini_rossi",
+            "punizioni",
+            "fuorigioco",
+            "rimesse_laterali",
+            "falli"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "punizioni",
+            "fuorigioco",
+            "rimesse_laterali",
+            "falli",
+            "cartellini_gialli"
+        ],
+        "num_stats": [
+            9,
+            10,
+            13,
+            8
+        ],
+        "err_usage": {
+            "punizioni": "0.92",
+            "fuorigioco": "0.92",
+            "rimesse_laterali": "0.92",
+            "falli": "0.92",
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 41,
+        "use_stats": [
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "angoli",
+            "parate",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi",
+            "cartellini_rossi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "cartellini_gialli"
+        ],
+        "num_stats": [
+            9,
+            10,
+            8
+        ],
+        "err_usage": {
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 42,
+        "use_stats": [
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "parate",
+            "falli",
+            "cartellini_rossi",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "falli"
+        ],
+        "num_stats": [
+            14,
+            13,
+            12
+        ],
+        "err_usage": {
+            "falli": "97.92",
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 43,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "passaggi_totali",
+            "passaggi_completati",
+            "contrasti",
+            "attacchi",
+            "attacchi_pericolosi",
+            "clearance_completate",
+            "cross_completati",
+            "intercetti",
+            "cartellini_rossi"
+        ],
+        "err_stats": [
+            "cartellini_gialli",
+            "cartellini_rossi",
+            "xg",
+            "attacchi_pericolosi"
+        ],
+        "num_stats": [
+            21,
+            20,
+            22,
+            19
+        ],
+        "err_usage": {
+            "xg": "96.26",
+            "attacchi_pericolosi": "99.07",
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 44,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "contrasti",
+            "attacchi",
+            "attacchi_pericolosi",
+            "clearance_completate",
+            "cross_completati",
+            "intercetti",
+            "cartellini_rossi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "contrasti",
+            "clearance_completate",
+            "cross_completati",
+            "intercetti",
+            "xg"
+        ],
+        "num_stats": [
+            19,
+            20,
+            15,
+            18
+        ],
+        "err_usage": {
+            "contrasti": "98.85",
+            "clearance_completate": "98.85",
+            "cross_completati": "98.85",
+            "intercetti": "98.85",
+            "xg": "98.85",
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 45,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "passaggi_totali",
+            "passaggi_completati",
+            "contrasti",
+            "attacchi",
+            "attacchi_pericolosi",
+            "clearance_completate",
+            "cross_completati",
+            "intercetti"
+        ],
+        "err_stats": [
+            "contrasti",
+            "xg",
+            "intercetti"
+        ],
+        "num_stats": [
+            20,
+            19,
+            18,
+            21
+        ],
+        "err_usage": {
+            "contrasti": "1.44",
+            "xg": "99.04",
+            "intercetti": "0.48",
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 46,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "passaggi_totali",
+            "attacchi",
+            "attacchi_pericolosi",
+            "cartellini_rossi",
+            "tiri_fermati",
+            "punizioni",
+            "passaggi_completati"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "tiri_fermati",
+            "punizioni",
+            "cartellini_gialli",
+            "passaggi_completati"
+        ],
+        "num_stats": [
+            14,
+            15,
+            16,
+            13,
+            17
+        ],
+        "err_usage": {
+            "tiri_fermati": "1.29",
+            "punizioni": "1.94",
+            "passaggi_completati": "0.65",
+            "no_stat_match": "0.00"
+        }
+    },
+    {
+        "id": 47,
+        "use_stats": [
+            "xg",
+            "possesso_palla",
+            "tiri",
+            "tiri_in_porta",
+            "tiri_fuori",
+            "tiri_fermati",
+            "punizioni",
+            "angoli",
+            "fuorigioco",
+            "rimesse_laterali",
+            "parate",
+            "falli",
+            "cartellini_gialli",
+            "attacchi",
+            "attacchi_pericolosi",
+            "cartellini_rossi"
+        ],
+        "err_stats": [
+            "cartellini_rossi",
+            "cartellini_gialli",
+            "xg",
+            "falli"
+        ],
+        "num_stats": [
+            15,
+            16,
+            14,
+            13
+        ],
+        "err_usage": {
+            "xg": "96.03",
+            "falli": "98.01",
+            "no_stat_match": "1.32"
+        }
+    }
+]

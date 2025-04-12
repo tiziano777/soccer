@@ -153,6 +153,7 @@ exports.extract_stat = async function (match) {
                     process.exit(1);
                 }
                 //restituisce minuto goal AWAY/HOME
+                /*
                 try {
                     var time_res = extract.time_goal_home_away($, output.gg_home, output.gg_away, output.result);
                     output.gg_home = time_res[0];
@@ -161,6 +162,7 @@ exports.extract_stat = async function (match) {
                     await error_function(new baseError("ERROR FUNCTION TIME_GOAL_HOME_AWAY ", match[j], j));
                     process.exit(1);
                 }
+                */
                 //1ST and 2ND time result
                 try {
                     var arr = ['', ''];
@@ -275,7 +277,6 @@ exports.extract_stat = async function (match) {
                     output = extract.check_negative_stat(output);
                     
                     console.log(output.id+JSON.stringify(output.details)+"\n"+ JSON.stringify(output.stat.full_time));
-                    console.log(output.result, output.gg_home, output.gg_away);
                     console.log(output.odds);
 
                     try {

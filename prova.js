@@ -105,9 +105,22 @@ function checkDateFormat(dateString) {
 
 async function main(){
     await client.connect();
-    await trigger.perform_stats_report(client);
+    
+    const cursor = client.db(dbName[0]).collection(collection).find({ ht_result: "" }, { projection: { _id: 0, id: 1 } });    
+    const ids = await cursor.toArray();
+    const idList = ids.map(doc => doc.id);
+    fs.writeFileSync("./log/mancanti_log.json", JSON.stringify(idList,));
+    
+    
     process.exit(0);
 }
+
+/*
+async function main(){
+    await client.connect();
+    await trigger.perform_stats_report(client);
+    process.exit(0);
+}*/
 
 /*
 async function main(){
@@ -168,42 +181,3 @@ async function main(){
 }
 main();
 */
-
-
-//db.calcio.find({str_date: {$where: "this.str_date.length<10"}}, {_id:1})
-//CHECK MINUTE GOAL
-/*
-function check_minute_goal(result,home,away,id){
-        result=result.split("-"); 
-        var r=parseInt(result[0])+parseInt(result[1]);
-        if(r==(home.length+away.length))return null;
-        else return id;
-    }
-async function main(){
-    result=[]
-    await client.connect()
-    var ids=await mongo.findIds(client);
-    for(var i=0;i<ids.length;i++){
-        var id=ids[i];
-        var match=await mongo.findById(client,id);
-        result.push(check_minute_goal(match[0].result,match[0].gg_home,match[0].gg_away,id));
-    }
-    fs.writeFileSync("./integrity.json",JSON.stringify(result));
-    exit(0);
-}
-main();
-*/
-/*
-async function rewrite(){
-    var a=fs.readFileSync("./integrity.json");
-    a=JSON.parse(a);
-    var b=[];
-    for(var i=0;i<a.length;i++){
-        if(a[i]!=null)b.push(a[i]);
-    }
-    fs.writeFileSync("mancanti.json",JSON.stringify(b));
-    exit(0);
-}
-rewrite();
-*/
-

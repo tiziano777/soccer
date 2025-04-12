@@ -125,7 +125,7 @@ exports.insert_ids = function (output) {
             k++;
         } while (k < arr1.length || output.details.id_champ == -1);
     }
-    catch (err) { console.log(err + "\n possibile cambiamento nome di un campionato"); throw err; }
+    catch (err) { console.log(err + "\n possibile cambiamento nome di un campionato"+output.details.nazione + " " + output.details.campionato); throw err; }
 
     //salva id_squadre
 

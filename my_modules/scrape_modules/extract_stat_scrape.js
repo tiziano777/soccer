@@ -288,39 +288,41 @@ exports.get_final_result = function ($, output) {
 //get_details match
 exports.get_details = function ($, output) {
     //get details match
-    var details = $('.tournamentHeader__country');
-    if (!(details.text() == '')) {
-        details = details.text();
+    var details = $('.wcl-overline_rOFfd.wcl-scores-overline-03_0pkdl');
+    if (!(details.eq(1).text() == '')) {
         //nazione
-        output.details.nazione = details.match(/[A-Z ]+:/g).toLocaleString();
-        output.details.nazione = (output.details.nazione).replace(':', '').toLowerCase();
+        details_nazione = details.eq(1).text();
+        output.details.nazione = details_nazione.replace(':', '').toLowerCase();
+
         //campionato
+        details=details.eq(2).text();
         try {
-
+            
             if (output.details.nazione == "australia") {
-                details = details.replace("-", ' ');
-            }
+                str = details.split("-");
+                details_campionato= str[0]+" "+str[1]
+                details_campionato=details_campionato.toLowerCase().trim()
 
-            var str = details.match(/:[a-z A-Z 0-9 .]+ -/g).toLocaleString();
-            str = str.replace(": ", '');
-            str = str.replace(" -", '');
-            str = str.toLowerCase();
-
-            if (str.indexOf(".") != -1) {
-                output.details.campionato = str.replace(".", '');
             }
-            else output.details.campionato = str;
+            else{
+                str = details.split("-");
+                details_campionato= str[0]
+                details_campionato=details_campionato.toLowerCase().trim()
+            }
+            campionato= details_campionato
+
+            if (campionato.indexOf(".") != -1) {
+                output.details.campionato = campionato.replace(".", '');
+            }
+            else output.details.campionato = campionato;
 
         } catch (err) {
-            var str = details.split(":");
-            str = str[1];
-            str = str.replace(":", '');
-            str = str.replace(" ", '');
-            output.details.campionato = str.toLowerCase();
+            console.log('Error in perform details.campionato.')
         }
         //round
         try {
-            output.details.round = details.match(/Giornata [0-9]+/g).toLocaleString();
+            str = details.split("-");
+            output.details.round = str[str.length-1].match(/Giornata [0-9]+/g).toLocaleString();
             output.details.round = parseInt((output.details.round).replace('Giornata ', ''));
         }
         catch (err) {
@@ -418,7 +420,7 @@ exports.take_stats = function ($, arr, temp) {
 
 //extract result 1st and 2nd time
 exports.get_time_results = function ($, arr) {
-    var time = $(".smv__incidentsHeader.section__title");
+    var time = $('.wclHeaderSection--summary.wcl-headerSection_5507A.wcl-text_F6xdz.wcl-spaceBetween_WGy1W')
     if (!estVuoto(time.text())) {
         for (var i = 0; i < time.length; i++) {
             if (i == 0) {

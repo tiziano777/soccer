@@ -70,7 +70,7 @@ exports.extract_odds = async function ($, dict, k, page) {
 exports.check_error = function (match) {
     if (
         match.id == '' || match.details.nazione == '' || match.details.campionato == '' || match.details.round == -1 ||
-        match.details.str_date == '' || match.details.data == '' || match[j].details.ora == '' || match.details.timestamp == 0 ||  match[j].details.id_champ == -1 || match.home == '' ||
+        match.details.str_date == '' || match.details.data == '' || match[j].details.ora == '' || match.details.timestamp == 0 || match[j].details.id_champ == -1 || match.home == '' ||
         match.away == '' || match.result == '' || match.ht_result == '' || match.st_result == '' || match.odds == {} ||
         match.home_id == '' || match.away_id == ''
     ) {
@@ -102,8 +102,6 @@ exports.riempito = function (output) {
         home_goal: -1,
         away_goal: -1,
         winner_code: 0,
-        gg_home: [],
-        gg_away: [],
         ht_result: '',
         st_result: '',
         stat: {
@@ -121,6 +119,7 @@ exports.riempito = function (output) {
 
 //check validity minute goal
 
+/*
 exports.check_minute_goal = function (result, home, away, output) {
     result = result.split("-");
     var r = parseInt(result[0]) + parseInt(result[1]);
@@ -129,6 +128,7 @@ exports.check_minute_goal = function (result, home, away, output) {
     output.gg_away = [];
     return output;
 }
+*/
 
 exports.num_goal = function (output) {
     var string_result = output.result;
@@ -201,7 +201,7 @@ exports.format_stat = function (text) {
         half_time: {},
         final_time: {}
     };
-    
+
     // Helper function to process stat names
     function processStatName(name) {
         // Convert to lowercase, trim, and remove accents
@@ -212,13 +212,13 @@ exports.format_stat = function (text) {
             .replace(/[\u0300-\u036f]/g, '')  // Remove accent marks
             .replace(/'/g, '_')  // Replace apostrophes with underscores
             .replace(/ /g, '_');  // Replace spaces with underscores
-    
+
         // Special cases
         if (name == "calci_d_angolo") name = "angoli";
         else if (name == 'possesso_palla') {
             return { name, isPercentage: true };
-        } 
-    
+        }
+
         return { name, isPercentage: false };
     }
 
@@ -232,18 +232,30 @@ exports.format_stat = function (text) {
                 text.stat[timePeriod][i].home = text.stat[timePeriod][i].home.replace("%", "");
                 text.stat[timePeriod][i].away = text.stat[timePeriod][i].away.replace("%", "");
             }
-            
-            if (name == 'xg') {
-                statistiche[timePeriod][name] = { 
-                    "home": parseFloat(text.stat[timePeriod][i].home), 
-                    "away": parseFloat(text.stat[timePeriod][i].away) 
+
+            if (name == 'xgot') {
+                statistiche[timePeriod][name] = {
+                    "home": parseFloat(text.stat[timePeriod][i].home),
+                    "away": parseFloat(text.stat[timePeriod][i].away)
+                };
+            }
+            else if (name == 'xg') {
+                statistiche[timePeriod][name] = {
+                    "home": parseFloat(text.stat[timePeriod][i].home),
+                    "away": parseFloat(text.stat[timePeriod][i].away)
+                };
+            }
+            if (name == 'xa') {
+                statistiche[timePeriod][name] = {
+                    "home": parseFloat(text.stat[timePeriod][i].home),
+                    "away": parseFloat(text.stat[timePeriod][i].away)
                 };
             }
 
             else {
-                statistiche[timePeriod][name] = { 
-                "home": parseInt(text.stat[timePeriod][i].home), 
-                "away": parseInt(text.stat[timePeriod][i].away) 
+                statistiche[timePeriod][name] = {
+                    "home": parseInt(text.stat[timePeriod][i].home),
+                    "away": parseInt(text.stat[timePeriod][i].away)
                 };
             }
         }
@@ -295,21 +307,21 @@ exports.get_details = function ($, output) {
         output.details.nazione = details_nazione.replace(':', '').toLowerCase();
 
         //campionato
-        details=details.eq(2).text();
+        details = details.eq(2).text();
         try {
-            
+
             if (output.details.nazione == "australia") {
                 str = details.split("-");
-                details_campionato= str[0]+" "+str[1]
-                details_campionato=details_campionato.toLowerCase().trim()
+                details_campionato = str[0] + " " + str[1]
+                details_campionato = details_campionato.toLowerCase().trim()
 
             }
-            else{
+            else {
                 str = details.split("-");
-                details_campionato= str[0]
-                details_campionato=details_campionato.toLowerCase().trim()
+                details_campionato = str[0]
+                details_campionato = details_campionato.toLowerCase().trim()
             }
-            campionato= details_campionato
+            campionato = details_campionato
 
             if (campionato.indexOf(".") != -1) {
                 output.details.campionato = campionato.replace(".", '');
@@ -322,7 +334,7 @@ exports.get_details = function ($, output) {
         //round
         try {
             str = details.split("-");
-            output.details.round = str[str.length-1].match(/Giornata [0-9]+/g).toLocaleString();
+            output.details.round = str[str.length - 1].match(/Giornata [0-9]+/g).toLocaleString();
             output.details.round = parseInt((output.details.round).replace('Giornata ', ''));
         }
         catch (err) {
@@ -383,7 +395,7 @@ exports.take_stats = function ($, arr, temp) {
 
     var stat = $('.stat__row');
     if (estVuoto(stat)) { stat = $('.wcl-row_OFViZ'); }
-    else  {console.log('SELETTORE STATS CAMBIATO O STATS NON DISPONIBILI');}
+    else { console.log('SELETTORE STATS CAMBIATO O STATS NON DISPONIBILI'); }
 
     if (!estVuoto(stat)) {
         for (i = 0; i < stat.length; i++) {
@@ -394,9 +406,30 @@ exports.take_stats = function ($, arr, temp) {
             away = res.eq(2).text();
             name = res.eq(1).text();
 
-            const re = /xg/i;
+            var re = /xgot/i;
             if (name.match(re) != null) {
-                name = "xg";
+                name = "xgot";
+                arr.push({
+                    name: name,
+                    home: parseFloat(res.eq(0).text()),
+                    away: parseFloat(res.eq(2).text())
+                });
+            }
+            else {
+                var re = /xg/i;
+                if (name.match(re) != null) {
+                    name = "xg";
+                    arr.push({
+                        name: name,
+                        home: parseFloat(res.eq(0).text()),
+                        away: parseFloat(res.eq(2).text())
+                    });
+                }
+            }
+
+            var re = /xa/i;
+            if (name.match(re) != null) {
+                name = "xa";
                 arr.push({
                     name: name,
                     home: parseFloat(res.eq(0).text()),
@@ -465,7 +498,7 @@ exports.time_goal_home_away = function ($, home, away, res) {
     home = [];
     away = [];
     var goal = $('svg[data-testid="wcl-icon-soccer"]');
-    goal=goal.filter((_, el) => !$(el).hasClass('footballOwnGoal-ico')).slice(1);
+    goal = goal.filter((_, el) => !$(el).hasClass('footballOwnGoal-ico')).slice(1);
     var owngoal = $('svg.footballOwnGoal-ico');
 
     if (goal != '') {
@@ -475,7 +508,7 @@ exports.time_goal_home_away = function ($, home, away, res) {
 
             if (goal.eq(i).closest('.smv__homeParticipant').length > 0) {
                 home.push(time);
-            } 
+            }
             else if (goal.eq(i).closest('.smv__awayParticipant').length > 0) {
                 away.push(time);
             }
@@ -488,7 +521,7 @@ exports.time_goal_home_away = function ($, home, away, res) {
 
             if (owngoal.eq(i).closest('.smv__homeParticipant').length > 0) {
                 home.push(time);
-            } 
+            }
             else if (owngoal.eq(i).closest('.smv__awayParticipant').length > 0) {
                 away.push(time);
             }
@@ -528,7 +561,7 @@ exports.time_goal_home_away = function ($, home, away, res) {
 
 exports.get_full_match = async function (page) {
     var fatto = false;
-    var patience=8
+    var patience = 8
     do {
         await scrape.range_sleep(1500);
         try {
@@ -542,5 +575,5 @@ exports.get_full_match = async function (page) {
         }
         await scrape.range_sleep(500);
         patience--;
-    } while (fatto == false && patience>0);
+    } while (fatto == false && patience > 0);
 }

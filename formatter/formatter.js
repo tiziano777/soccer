@@ -36,11 +36,6 @@ function flattenJSON(document) {
 
 async function main(){
   await client.connect();
-  const documents = await mongo.find_current_season_matches(client,33);
-  var flattened_docs=[];
-  documents.forEach(doc => flattened_docs.push(flattenJSON(doc)));
-  var series=convertToSeries(flattened_docs);
-  fs.writeFileSync("./premier.json",JSON.stringify(series));
   process.exit(0);
 }
 

@@ -68,8 +68,6 @@ exports.extract_stat = async function (match) {
         home_goal: -1,
         away_goal: -1,
         winner_code: 0,
-        gg_home: [],
-        gg_away: [],
         ht_result: '',
         st_result: '',
         stat: {
@@ -179,8 +177,7 @@ exports.extract_stat = async function (match) {
                 output.st_result = arr[1];
 
                 //check validity goal time
-
-                output = extract.check_minute_goal(output.result, output.gg_home, output.gg_away, output);
+                //output = extract.check_minute_goal(output.result, output.gg_home, output.gg_away, output);
 
                 //nome home/away team
                 try {

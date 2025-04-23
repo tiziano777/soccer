@@ -179,8 +179,6 @@ exports.resetJsonOutput = function (output) {
         home_goal: -1,
         away_goal: -1,
         winner_code: 0,
-        gg_home: [],
-        gg_away: [],
         ht_result: '',
         st_result: '',
         stat: {

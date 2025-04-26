@@ -42,7 +42,8 @@ async function main() {
     new_matches = await stats.extract_stat(r2);
 
     //ESTRARRE ID DALLA PAGINA "risultati" in caso ci fossimo persi qualcosa dai palinsesti
-    var id = await ids.get_id_match();
+    var id = await 
+    ids.get_id_match();
 
     new_matches.concat(await stats.extract_stat(id));
     console.log('nuovi match: ', new_matches.length);

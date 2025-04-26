@@ -98,7 +98,6 @@ function add_id(output, squadre, h_a) {
     var output_key = `${h_a}_id`
     output[output_key] = squadre[output[h_a]];
     console.log("add new id: " + new_id + " for: " + output[h_a]);
-    fs.writeFileSync("./CHANGED.txt", new_id);
 
     //aggiornamento file
 

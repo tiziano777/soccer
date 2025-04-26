@@ -245,7 +245,7 @@ exports.format_stat = function (text) {
                     "away": parseFloat(text.stat[timePeriod][i].away)
                 };
             }
-            if (name == 'xa') {
+            else if (name == 'xa') {
                 statistiche[timePeriod][name] = {
                     "home": parseFloat(text.stat[timePeriod][i].home),
                     "away": parseFloat(text.stat[timePeriod][i].away)
@@ -398,53 +398,46 @@ exports.take_stats = function ($, arr, temp) {
     else { console.log('SELETTORE STATS CAMBIATO O STATS NON DISPONIBILI'); }
 
     if (!estVuoto(stat)) {
-        for (i = 0; i < stat.length; i++) {
-            stat1 = stat.eq(i).children();
-            var res = stat1.eq(0).children();
-
-            home = res.eq(0).text();
-            away = res.eq(2).text();
-            name = res.eq(1).text();
-
-            var re = /xgot/i;
-            if (name.match(re) != null) {
-                name = "xgot";
+        for (let i = 0; i < stat.length; i++) {
+            const stat1 = stat.eq(i).children();
+            const res = stat1.eq(0).children();
+    
+            const homeText = res.eq(0).text();
+            const awayText = res.eq(2).text();
+            const nameText = res.eq(1).text();
+    
+            const homeVal = parseFloat(homeText);
+            const awayVal = parseFloat(awayText);
+    
+            let nameLower = nameText.toLowerCase();
+            let metricName;
+    
+            // Ordine specifico per evitare match errati (xg è contenuto in xgot)
+            if (nameLower.includes("xgot")) {
+                metricName = "xgot";
+            } else if (nameLower.includes("xg")) {
+                metricName = "xg";
+            } else if (nameLower.includes("xa")) {
+                metricName = "xa";
+            }
+    
+            if (metricName) {
                 arr.push({
-                    name: name,
-                    home: parseFloat(res.eq(0).text()),
-                    away: parseFloat(res.eq(2).text())
+                    name: metricName,
+                    home: homeVal,
+                    away: awayVal
                 });
-            }
-            else {
-                var re = /xg/i;
-                if (name.match(re) != null) {
-                    name = "xg";
-                    arr.push({
-                        name: name,
-                        home: parseFloat(res.eq(0).text()),
-                        away: parseFloat(res.eq(2).text())
-                    });
-                }
-            }
-
-            var re = /xa/i;
-            if (name.match(re) != null) {
-                name = "xa";
+            } else {
+                // Caso generico: manteniamo il nome originale
                 arr.push({
-                    name: name,
-                    home: parseFloat(res.eq(0).text()),
-                    away: parseFloat(res.eq(2).text())
-                });
-            }
-            else {
-                arr.push({
-                    name: name,
-                    home: home,
-                    away: away
+                    name: nameText,
+                    home: homeText,
+                    away: awayText
                 });
             }
         }
     }
+    
     else { console.log('not stats'); return []; }
     return arr;
 }
@@ -565,11 +558,11 @@ exports.get_full_match = async function (page) {
     do {
         await scrape.range_sleep(1500);
         try {
-            await page.waitForSelector('.event__more.event__more--static', { visible: true, timeout: 2000 });
+            await page.waitForSelector('.event__more.event__more--static', { visible: true, timeout: 10000 }); 
         } catch (err) { }
         await scrape.range_sleep(500);
         try {
-            await page.click('a[class="event__more event__more--static"]', { delay: 3 });
+            await page.click('a[class="event__more event__more--static"]', { delay: 7 });
         } catch (err) {
             fatto = true;
         }
